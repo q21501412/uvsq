@@ -1,7 +1,5 @@
 package fr.uvsq.coo.ex3_2;
 
-import org.junit.Test;
-
 import junit.framework.TestCase;
 
 public class BowlingGameTest extends TestCase {
