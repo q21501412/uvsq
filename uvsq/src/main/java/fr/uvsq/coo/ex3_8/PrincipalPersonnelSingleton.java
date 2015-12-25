@@ -6,7 +6,7 @@ public class PrincipalPersonnelSingleton {
 
 		Personnel a = new Personnel.PersonnelBuilder().name("A")
 				.fonction("directeur").build();
-		
+		// Robot r = new Destu...
 		Personnel b = new Personnel.PersonnelBuilder().name("B")
 				.fonction("developpeur").build();
 

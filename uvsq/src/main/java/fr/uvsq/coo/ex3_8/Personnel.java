@@ -1,11 +1,17 @@
 package fr.uvsq.coo.ex3_8;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Personnel implements Groupe {
+public class Personnel implements Groupe, Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -4806530813613158998L;
+	
 	final private String name;
 	final private String lastName;
 	final private LocalDate birthDate;
@@ -51,6 +57,11 @@ public class Personnel implements Groupe {
 	@Override
 	public String getAnnuaireBFS() {
 		return this.name + " - ";
+	}
+	
+	@Override
+	public String toString() {
+		return this.name + "|" + this.lastName;
 	}
 	
 	@Override
